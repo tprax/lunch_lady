@@ -3,3 +3,15 @@
 #user chooses two side dish items
 #repeats user order
 #totals order and displays it
+#MUST USE CLASSES
+#--------------------Sudo Code-----------------------
+#display menu
+#get user main dish
+#display side menu
+#get users side dishes
+#store order
+#calculate order total
+#display order
+#display total
+
+
