@@ -14,4 +14,15 @@
 #display order
 #display total
 
+def main_menu
+end
+
+def side_menu
+end
+
+def total_order
+end
+
+def displays
+end
 
