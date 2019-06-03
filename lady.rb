@@ -14,6 +14,9 @@
 #display order
 #display total
 
+def greeting
+end
+
 def main_menu
 end
 
