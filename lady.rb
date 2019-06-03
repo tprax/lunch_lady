@@ -15,6 +15,7 @@
 #display total
 
 def greeting
+  puts "Hello Welcome to My Resturant!"
 end
 
 def main_menu
@@ -29,3 +30,4 @@ end
 def displays
 end
 
+greeting
