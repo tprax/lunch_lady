@@ -16,9 +16,24 @@
 
 def greeting
   puts "Hello Welcome to My Resturant!"
+  puts "would you like a seat?"
+  answer = gets.to_s.strip.downcase
+  if answer == "yes"
+    main_menu
+  elsif answer == "no"
+    puts "Okay Have a Great Day!"
+    exit
+  else
+    puts "sorry that doesn't make sense."
+  end
 end
 
 def main_menu
+  puts "Here are you main dish for today."
+  puts "1.) Main dish $10.00"
+  puts "2.) Main dish $11.00"
+  puts "3.) Main dish $10.00"
+  puts "4.) Main dish $13.00"
 end
 
 def side_menu
