@@ -36,6 +36,7 @@ def main_menu
   puts "4.) Main dish $13.00"
   answer = gets.to_i
   puts "#{answer}"
+  side_menu
 end
 
 def side_menu
