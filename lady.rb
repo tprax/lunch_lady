@@ -39,6 +39,7 @@ def main_menu
 end
 
 def side_menu
+  puts "Here are our side dishes!"
 end
 
 def total_order
