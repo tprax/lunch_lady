@@ -13,7 +13,8 @@
 #calculate order total
 #display order
 #display total
-
+@meal = []
+@total = []
 def greeting
   puts "Hello Welcome to My Resturant!"
   puts "would you like a seat?"
@@ -37,17 +38,18 @@ def main_menu
   answer = gets.to_i
   case answer
     when 1
-      puts "main dish one"
+      @meal << meal = "main dish 1"
     when 2
-      puts "main dish two"
+      @meal << meal = "main dish 2"
     when 3
-      puts "main dish three"
+      @meal << meal = "main dish 3"
     when 4
-      puts "main dish four"
+      @meal << meal = "main dish 4"
     else
       puts "Sorry that is not an option please choose 1-4."
       exit
   end
+  puts @meal
   side_menu
 end
 
