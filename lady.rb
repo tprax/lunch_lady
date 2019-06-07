@@ -35,7 +35,16 @@ def main_menu
   puts "3.) Main dish $10.00"
   puts "4.) Main dish $13.00"
   answer = gets.to_i
-  puts "#{answer}"
+  case answer
+    when 1
+      puts "main dish one"
+    when 2
+      puts "main dish two"
+    when 3
+      puts "main dish three"
+    when 4
+      puts "main dish four"
+  end
   side_menu
 end
 
