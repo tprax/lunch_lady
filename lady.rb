@@ -45,6 +45,10 @@ def side_menu
   puts "2.) Side dish 2"
   puts "3.) Side dish 3"
   puts "4.) Side dish 4"
+  side1 = gets.to_i
+  side2 = gets.to_i
+  puts side1
+  puts side2
 end
 
 def total_order
