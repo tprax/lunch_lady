@@ -39,16 +39,21 @@ def main_menu
   case answer
     when 1
       @meal << meal = "main dish 1"
+      @total << 10
     when 2
       @meal << meal = "main dish 2"
+      @total << 11
     when 3
       @meal << meal = "main dish 3"
+      @total << 10
     when 4
       @meal << meal = "main dish 4"
+      @total << 13
     else
       puts "Sorry that is not an option please choose 1-4."
       exit
   end
+  puts @total
   puts @meal
   side_menu
 end
