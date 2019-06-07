@@ -44,6 +44,9 @@ def main_menu
       puts "main dish three"
     when 4
       puts "main dish four"
+    else
+      puts "Sorry that is not an option please choose 1-4."
+      exit
   end
   side_menu
 end
