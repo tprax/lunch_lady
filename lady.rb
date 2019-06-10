@@ -76,8 +76,21 @@ def side_menu
         puts "Sorry that is not an option"
         exit
     end
-    puts @meal
   side2 = gets.to_i
+    case side2
+      when 1
+        @meal << side = "Side dish 1"
+      when 2
+        @meal << side = "Side dish 2"
+      when 3
+        @meal << side = "Side dish 3"
+      when 4
+        @meal << side = "Side dish 4"
+      else
+        puts "Sorry that is not an option"
+        exit
+    end
+  puts @meal
 end
 
 def total_order
