@@ -66,12 +66,16 @@ def side_menu
     case side1
       when 1
         @meal << side = "Side dish 1"
+        @total << 6
       when 2
         @meal << side = "Side dish 2"
+        @total << 6
       when 3
         @meal << side = "Side dish 3"
+        @total << 5
       when 4
         @meal << side = "Side dish 4"
+        @total << 7
       else
         puts "Sorry that is not an option"
         exit
@@ -80,12 +84,16 @@ def side_menu
     case side2
       when 1
         @meal << side = "Side dish 1"
+        @total << 6
       when 2
         @meal << side = "Side dish 2"
+        @total << 6
       when 3
         @meal << side = "Side dish 3"
+        @total << 5
       when 4
         @meal << side = "Side dish 4"
+        @total << 7
       else
         puts "Sorry that is not an option"
         exit
