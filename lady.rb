@@ -101,6 +101,7 @@ def side_menu
 end
 
 def total_order
+  
 end
 
 def displays
