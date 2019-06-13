@@ -69,8 +69,8 @@ def side_menu
   side1 = gets.to_i
     case side1
       when 1
-        @meal << side = "Side dish 1"
-        @total << 6
+        @meal = side = "Side dish 1"
+        @total = 6
       when 2
         @meal << side = "Side dish 2"
         @total << 6
