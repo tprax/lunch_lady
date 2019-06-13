@@ -13,8 +13,12 @@
 #calculate order total
 #display order
 #display total
-@meal = []
-@total = []
+class Order
+  def initialize
+    greeting
+    @meal = []
+  @total = []
+  end
 def greeting
   puts "Hello Welcome to My Resturant!"
   puts "would you like a seat?"
@@ -38,8 +42,8 @@ def main_menu
   answer = gets.to_i
   case answer
     when 1
-      @meal << meal = "main dish 1"
-      @total << 10
+      @meal = "main dish 1"
+      @total = 10
     when 2
       @meal << meal = "main dish 2"
       @total << 11
@@ -98,6 +102,8 @@ def side_menu
         puts "Sorry that is not an option"
         exit
     end
+    puts @total
+    puts @meal
 end
 
 def total_order
@@ -106,5 +112,6 @@ end
 
 def displays
 end
+end
 
-greeting
+Order.new
