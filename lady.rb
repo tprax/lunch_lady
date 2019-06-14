@@ -102,8 +102,6 @@ def side_menu
         puts "Sorry that is not an option"
         exit
     end
-    puts @total
-    puts @meal
 end
 
 def total_order
