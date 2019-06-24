@@ -16,8 +16,6 @@
 class Order
   def initialize
     greeting
-    @meal = []
-  @total = []
   end
 def greeting
   puts "Hello Welcome to My Resturant!"
@@ -42,21 +40,22 @@ def main_menu
   answer = gets.to_i
   case answer
     when 1
-      @meal = "main dish 1"
+      @main_meal = "main dish 1"
       @total = 10
     when 2
-      @meal << meal = "main dish 2"
-      @total << 11
+      @main_meal = "main dish 2"
+      @main_total = 11
     when 3
-      @meal << meal = "main dish 3"
-      @total << 10
+      @main_meal = "main dish 3"
+      @main_total = 10
     when 4
-      @meal << meal = "main dish 4"
-      @total << 13
+      @main_meal = "main dish 4"
+      @main_total = 13
     else
       puts "Sorry that is not an option please choose 1-4."
       exit
   end
+  puts "#{@main_meal} is this much #{@main_total}"
   side_menu
 end
 
@@ -69,17 +68,17 @@ def side_menu
   side1 = gets.to_i
     case side1
       when 1
-        @meal = side = "Side dish 1"
+        @side_meal = "Side dish 1"
         @total = 6
       when 2
-        @meal << side = "Side dish 2"
-        @total << 6
+        @side_meal = "Side dish 2"
+        @total = 6
       when 3
-        @meal << side = "Side dish 3"
-        @total << 5
+        @side_meal = "Side dish 3"
+        @total = 5
       when 4
-        @meal << side = "Side dish 4"
-        @total << 7
+        @side_meal = "Side dish 4"
+        @total = 7
       else
         puts "Sorry that is not an option"
         exit
@@ -87,21 +86,26 @@ def side_menu
   side2 = gets.to_i
     case side2
       when 1
-        @meal << side = "Side dish 1"
-        @total << 6
+        @side_meal_2 = "Side dish 1"
+        @new_total = @total + 6
       when 2
-        @meal << side = "Side dish 2"
-        @total << 6
+        @side_meal_2 = "Side dish 2"
+        @new_total = @total + 6
       when 3
-        @meal << side = "Side dish 3"
-        @total << 5
+        @side_meal_2 = "Side dish 3"
+        @new_total = @total + 5
       when 4
-        @meal << side = "Side dish 4"
-        @total << 7
+        @side_meal_2 = "Side dish 4"
+        @new_total = @total + 7
       else
         puts "Sorry that is not an option"
         exit
     end
+    @grand_total = @new_total + @main_total
+    puts "First side is #{@side_meal}"
+    puts "Second side is #{@side_meal_2}"
+    puts "the total is $#{@new_total.to_f}"
+    puts "So that puts your whole total to #{@grand_total}"
 end
 
 def total_order
