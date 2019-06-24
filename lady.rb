@@ -108,12 +108,4 @@ def side_menu
     puts "So that puts your whole total to #{@grand_total}"
 end
 
-def total_order
-  
-end
-
-def displays
-end
-end
-
 Order.new
