@@ -55,7 +55,6 @@ def main_menu
       puts "Sorry that is not an option please choose 1-4."
       exit
   end
-  puts "#{@main_meal} is this much #{@main_total}"
   side_menu
 end
 
@@ -103,6 +102,7 @@ def side_menu
     end
     @side_total = @new_total + @total
     @grand_total = @side_total + @main_total
+    puts "Main dish is #{@main_meal}"
     puts "First side is #{@side_meal}"
     puts "Second side is #{@side_meal_2}"
     puts "the total is $#{@side_total.to_f}"
