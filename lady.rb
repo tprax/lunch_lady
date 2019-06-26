@@ -41,7 +41,7 @@ def main_menu
   case answer
     when 1
       @main_meal = "main dish 1"
-      @total = 10
+      @main_total = 10
     when 2
       @main_meal = "main dish 2"
       @main_total = 11
@@ -87,25 +87,26 @@ def side_menu
     case side2
       when 1
         @side_meal_2 = "Side dish 1"
-        @new_total = @total + 6
+        @new_total = 6
       when 2
         @side_meal_2 = "Side dish 2"
-        @new_total = @total + 6
+        @new_total = 6
       when 3
         @side_meal_2 = "Side dish 3"
-        @new_total = @total + 5
+        @new_total = 5
       when 4
         @side_meal_2 = "Side dish 4"
-        @new_total = @total + 7
+        @new_total = 7
       else
         puts "Sorry that is not an option"
         exit
     end
-    @grand_total = @new_total + @main_total
+    @side_total = @new_total + @total
+    @grand_total = @side_total + @main_total
     puts "First side is #{@side_meal}"
     puts "Second side is #{@side_meal_2}"
-    puts "the total is $#{@new_total.to_f}"
-    puts "So that puts your whole total to #{@grand_total}"
+    puts "the total is $#{@side_total.to_f}"
+    puts "So that puts your whole total to $#{@grand_total}"
 end
-
+end
 Order.new
