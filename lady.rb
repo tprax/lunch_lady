@@ -17,54 +17,54 @@ class Order
   def initialize
     greeting
   end
-def greeting
-  puts "Hello Welcome to My Resturant!"
-  puts "would you like a seat?"
-  answer = gets.to_s.strip.downcase
-  if answer == "yes"
-    main_menu
-  elsif answer == "no"
-    puts "Okay Have a Great Day!"
-    exit
-  else
-    puts "sorry that doesn't make sense."
-  end
-end
-
-def main_menu
-  puts "Here are you main dish for today."
-  puts "1.) Main dish $10.00"
-  puts "2.) Main dish $11.00"
-  puts "3.) Main dish $10.00"
-  puts "4.) Main dish $13.00"
-  answer = gets.to_i
-  case answer
-    when 1
-      @main_meal = "main dish 1"
-      @main_total = 10
-    when 2
-      @main_meal = "main dish 2"
-      @main_total = 11
-    when 3
-      @main_meal = "main dish 3"
-      @main_total = 10
-    when 4
-      @main_meal = "main dish 4"
-      @main_total = 13
-    else
-      puts "Sorry that is not an option please choose 1-4."
+  def greeting
+    puts "Hello Welcome to My Resturant!"
+    puts "would you like a seat?"
+    answer = gets.to_s.strip.downcase
+    if answer == "yes"
+      main_menu
+    elsif answer == "no"
+      puts "Okay Have a Great Day!"
       exit
+    else
+      puts "sorry that doesn't make sense."
+    end
   end
-  side_menu
-end
 
-def side_menu
-  puts "Here are our side dishes!"
-  puts "1.) Side dish 1"
-  puts "2.) Side dish 2"
-  puts "3.) Side dish 3"
-  puts "4.) Side dish 4"
-  side1 = gets.to_i
+  def main_menu
+    puts "Here are you main dish for today."
+    puts "1.) Main dish $10.00"
+    puts "2.) Main dish $11.00"
+    puts "3.) Main dish $10.00"
+    puts "4.) Main dish $13.00"
+    answer = gets.to_i
+    case answer
+      when 1
+        @main_meal = "main dish 1"
+        @main_total = 10
+      when 2
+        @main_meal = "main dish 2"
+        @main_total = 11
+      when 3
+        @main_meal = "main dish 3"
+        @main_total = 10
+      when 4
+        @main_meal = "main dish 4"
+        @main_total = 13
+      else
+        puts "Sorry that is not an option please choose 1-4."
+        exit
+    end
+    side_menu
+  end
+
+  def side_menu
+    puts "Here are our side dishes!"
+    puts "1.) Side dish 1"
+    puts "2.) Side dish 2"
+    puts "3.) Side dish 3"
+    puts "4.) Side dish 4"
+    side1 = gets.to_i
     case side1
       when 1
         @side_meal = "Side dish 1"
@@ -82,7 +82,7 @@ def side_menu
         puts "Sorry that is not an option"
         exit
     end
-  side2 = gets.to_i
+    side2 = gets.to_i
     case side2
       when 1
         @side_meal_2 = "Side dish 1"
@@ -107,6 +107,6 @@ def side_menu
     puts "Second side is #{@side_meal_2}"
     puts "the total is $#{@side_total.to_f}"
     puts "So that puts your whole total to $#{@grand_total}"
-end
+  end
 end
 Order.new
