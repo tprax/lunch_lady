@@ -105,7 +105,7 @@ class Order
     puts "Main dish is #{@main_meal}"
     puts "First side is #{@side_meal}"
     puts "Second side is #{@side_meal_2}"
-    puts "the total is $#{@side_total.to_f}"
+    puts "the total is for the sides are $#{@side_total.to_f}"
     puts "So that puts your whole total to $#{@grand_total}"
   end
 end
