@@ -33,23 +33,23 @@ class Order
 
   def main_menu
     puts "Here are you main dish for today."
-    puts "1.) Main dish $10.00"
-    puts "2.) Main dish $11.00"
-    puts "3.) Main dish $10.00"
-    puts "4.) Main dish $13.00"
+    puts "1.) Hamburger $10.00"
+    puts "2.) Grilled Cheese $11.00"
+    puts "3.) House Salad $10.00"
+    puts "4.) Soup Special $13.00"
     answer = gets.to_i
     case answer
       when 1
-        @main_meal = "main dish 1"
+        @main_meal = "Hamburger"
         @main_total = 10
       when 2
-        @main_meal = "main dish 2"
+        @main_meal = "Grilled Cheese"
         @main_total = 11
       when 3
-        @main_meal = "main dish 3"
+        @main_meal = "House Salad"
         @main_total = 10
       when 4
-        @main_meal = "main dish 4"
+        @main_meal = "Soup Special"
         @main_total = 13
       else
         puts "Sorry that is not an option please choose 1-4."
@@ -102,9 +102,9 @@ class Order
     end
     @side_total = @new_total + @total
     @grand_total = @side_total + @main_total
-    puts "Main dish is #{@main_meal}"
-    puts "First side is #{@side_meal}"
-    puts "Second side is #{@side_meal_2}"
+    puts "Main dish is a #{@main_meal}"
+    puts "First side is a #{@side_meal}"
+    puts "Second side is a #{@side_meal_2}"
     puts "the total is for the sides are $#{@side_total.to_f}"
     puts "So that puts your whole total to $#{@grand_total}"
   end
